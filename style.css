@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #fff;
+  color: #333;
+}
+
+/* Navbar */
+nav {
+  background-color: #001f5b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  color: white;
+  flex-wrap: wrap;
+}
+
+nav .logo {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffd700;
+}
+
+/* Dropdown */
+nav ul li ul {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  background: #001f5b;
+  display: none;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+nav ul li:hover ul {
+  display: flex;
+}
+
+nav input {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+              url('https://i.ibb.co/4PJZx9f/smkpemuda.jpg') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 15px;
+  margin-top: 10px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+/* Statistik */
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 30px 0;
+}
+
+.stat-box {
+  background: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  padding: 20px;
+  width: 150px;
+  text-align: center;
+}
+
+.stat-box span {
+  font-size: 30px;
+  font-weight: bold;
+  display: block;
+  color: #001f5b;
+}
+
+.stat-box p {
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+/* Profil Sekolah */
+.profil {
+  text-align: center;
+  margin: 40px 20px;
+}
+
+.profil h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #001f5b;
+}
+
+.profil p {
+  font-size: 15px;
+  color: #555;
+}
+
+/* Footer */
+footer {
+  background-color: #001f5b;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero h1 {
+    font-size: 24px;
+  }
+
+  .stat-box {
+    width: 45%;
+  }
+  }
