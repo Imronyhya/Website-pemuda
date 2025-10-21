@@ -1,68 +1,133 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>SMK PEMUDA KUTOREJO</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="wrap">
+    <nav class="nav">
+      <a href="#beranda">Beranda</a>
+      <a href="#media">Media</a>
+      <a href="#profil">Profil</a>
+      <a href="#ekskul">Ekstrakurikuler</a>
+    </nav>
 
-  <!-- Navbar -->
-  <nav>
-    <div class="logo">SKAMUDA</div>
-    <ul>
-      <li><a href="#">Beranda</a></li>
-      <li><a href="#">Media</a></li>
-      <li><a href="#">Profil ▼</a>
-        <ul>
-          <li><a href="#">Visi Misi</a></li>
-          <li><a href="#">Sejarah</a></li>
-          <li><a href="#">Struktur</a></li>
-        </ul>
-      </li>
-      <li><a href="#">Kontak</a></li>
-      <li><a href="#">Ekstrakurikuler</a></li>
-    </ul>
-    <input type="text" placeholder="Cari...">
-  </nav>
+    <header class="hero card" id="beranda">
+      <div class="hero-left">
+        <a class="logo" href="#">SMK PEMUDA KUTOREJO</a>
+        <h1>Selamat datang di SMK Pemuda Kutorejo</h1>
+        <p class="lead muted">Sekolah Kejuruan yang mengedepankan kompetensi, karakter, dan kreativitas. Temukan program kami dan berkarir bersama.</p>
+        <p><a href="#profil" class="cta">Lihat Profil</a></p>
+        <div style="margin-top:12px" class="muted">Alamat singkat sekolah — Jalan Contoh No.1, Kutorejo</div>
+      </div>
+      <div class="photo-card">
+        <div class="photo" aria-hidden="true">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img">
+            <defs>
+              <linearGradient id="g1" x1="0" x2="1">
+                <stop offset="0%" stop-color="#7fb3ff" />
+                <stop offset="100%" stop-color="#0b3b66" />
+              </linearGradient>
+            </defs>
+            <rect x="10" y="30" width="180" height="120" rx="12" fill="url(#g1)" />
+            <g transform="translate(32,48)" fill="#fff" opacity="0.95">
+              <rect width="44" height="24" rx="6"/>
+              <rect x="0" y="36" width="120" height="12" rx="6"/>
+              <rect x="0" y="56" width="80" height="10" rx="5"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <h1>SMK PEMUDA KUTOREJO</h1>
-    <p>Selamat datang di website resmi SMK Pemuda Kutorejo. Temukan informasi terbaru, prestasi siswa, dan kegiatan sekolah kami di sini. Bersama, kita wujudkan generasi yang cerdas, terampil, dan berakhlak mulia!</p>
-  </section>
+    <section id="profil" class="card">
+      <h2 class="section-title">Profil Sekolah & Visi Misi</h2>
+      <div class="columns">
+        <div class="col">
+          <h3>Profil Singkat</h3>
+          <p class="muted">SMK Pemuda Kutorejo adalah sekolah menengah kejuruan yang berfokus pada pembelajaran vokasi untuk mempersiapkan siswa menjadi tenaga terampil di bidang teknologi dan otomotif.</p>
+          <ul class="list">
+            <li>Tahun berdiri: 20XX</li>
+            <li>Akreditasi: A</li>
+            <li>Jumlah siswa: ~600</li>
+          </ul>
+        </div>
+        <div class="col">
+          <h3>Visi</h3>
+          <p class="muted">Menjadi lembaga pendidikan vokasi yang unggul dan berdaya saing pada tingkat nasional.</p>
+          <h3>Misi</h3>
+          <ol class="list">
+            <li>Menyelenggarakan pendidikan berkualitas berbasis kompetensi.</li>
+            <li>Meningkatkan kerja sama dengan dunia industri.</li>
+            <li>Mendorong pengembangan karakter dan kemandirian siswa.</li>
+          </ol>
+        </div>
+      </div>
 
-  <!-- Statistik -->
-  <section class="stats">
-    <div class="stat-box">
-      <span>100</span>
-      <p>Siswa Aktif</p>
-    </div>
-    <div class="stat-box">
-      <span>16</span>
-      <p>Guru</p>
-    </div>
-    <div class="stat-box">
-      <span>9</span>
-      <p>Staf</p>
-    </div>
-    <div class="stat-box">
-      <span>4</span>
-      <p>Ekstrakurikuler</p>
-    </div>
-  </section>
+      <div style="margin-top:18px">
+        <h2 class="section-title">Jurusan</h2>
+        <div class="majors">
+          <div class="major">
+            <span class="badge">TKJ</span>
+            <h3>Teknik Komputer dan Jaringan</h3>
+            <p class="muted">Pembelajaran tentang jaringan, server, keamanan, dan infrastruktur IT.</p>
+          </div>
+          <div class="major">
+            <span class="badge">TKR</span>
+            <h3>Teknik Kendaraan Ringan</h3>
+            <p class="muted">Pembelajaran mekanik kendaraan, perawatan, dan teknologi otomotif modern.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!-- Profil Sekolah -->
-  <section class="profil">
-    <h2>Profil Sekolah</h2>
-    <p>Bagian ini dapat diisi dengan informasi tentang sekolah, visi, misi, dan sejarahnya.</p>
-  </section>
+    <section id="ekskul" class="card">
+      <h2 class="section-title">Ekstrakurikuler</h2>
+      <p class="muted">Klik tautan menu "Ekstrakurikuler" atau gulir ke sini untuk melihat aktivitas ekstrakurikuler kami.</p>
+      <div class="ekskul-grid">
+        <div class="ek-card"><h3>Makeup</h3><p class="muted">Latihan keterampilan tata rias dan estetika.</p></div>
+        <div class="ek-card"><h3>Banjari</h3><p class="muted">Grup musik tradisional untuk melestarikan budaya.</p></div>
+        <div class="ek-card"><h3>Futsal</h3><p class="muted">Ekstrakurikuler olahraga kompetitif antar sekolah.</p></div>
+        <div class="ek-card"><h3>Voli</h3><p class="muted">Tim voli aktif dengan latihan dan turnamen rutin.</p></div>
+      </div>
+    </section>
 
-  <!-- Footer -->
-  <footer>
-    © 2025 Sekolaku. All Rights Reserved.
-  </footer>
+    <section id="media" class="card">
+      <h2 class="section-title">Video Profil Sekolah</h2>
+      <div class="video-wrap">
+        <video controls poster="" preload="metadata">
+          <source src="" type="video/mp4">
+          Video profil tidak tersedia. Tambahkan alamat file video ke src.
+        </video>
+      </div>
+    </section>
 
+    <section id="kontak" class="card">
+      <h2 class="section-title">Kontak</h2>
+      <div class="contact">
+        <div>
+          <p class="muted">Hubungi kami untuk informasi pendaftaran atau kerjasama industri.</p>
+          <p><strong>Alamat:</strong> Jalan Contoh No.1, Kutorejo</p>
+          <p><strong>Telepon:</strong> (0271) - 000000</p>
+          <p><strong>Email:</strong> info@smkpemudakutorejo.sch.id</p>
+        </div>
+        <div>
+          <form onsubmit="event.preventDefault();alert('Form kontak hanya demo — hubungi via email/telepon');">
+            <input placeholder="Nama" required>
+            <input placeholder="Email atau Telepon" required>
+            <textarea placeholder="Pesan" rows="5" required></textarea>
+            <button class="submit">Kirim</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div>© <strong>SMK PEMUDA KUTOREJO</strong> — semua hak dilindungi.</div>
+    </footer>
+  </div>
 </body>
-    </html>
+</html>
